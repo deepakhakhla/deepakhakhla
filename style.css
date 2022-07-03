@@ -1,0 +1,229 @@
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;}
+
+html {scroll-behavior: smooth;}
+
+body{color: #ffffff; font-family:"Open sans", sans-serif;}
+
+font-face {font-display: swap;}
+
+nav{display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.8em;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.8;
+    background-attachment:scroll;}
+
+    .moon{position: absolute;
+          left:92%;
+          top: 30%;
+          transform: translate(-50%, -50%);
+          height: 80px;
+          width: 80px;
+          box-shadow: white 20px -15px 5px -1px inset;
+          border-radius: 50%;}
+
+#brand-name{font-style: italic;
+            font-size: 1.3rem;
+            letter-spacing:2px;}
+
+.dots{font-size: 35px;
+      color:yellow;}
+
+#brand-name:hover{color:yellow;
+                  cursor:pointer;
+                  transition:color .3s ease-in-out;} 
+
+#brand-name:hover .dots{color: #ffffff;
+                       transition: color .3s ease-in-out;}
+
+.nav-links{display: flex;
+           padding-top: 15px;}
+
+.nav-links li{list-style: none;}
+
+.nav-links li:hover{color:yellow;}
+
+.nav-links li a {text-decoration: none;
+                 padding: 20px;
+                 display: block;
+                 color: inherit;}
+
+                 #btnToTop {
+                     display: none;
+                     position: fixed;
+                     bottom: 55px; /* Place the button at the bottom of the page */
+                     right: 10px;
+                     opacity: 9;
+                     z-index: 99;
+                     border: none;
+                     outline: none;
+                     padding: 15px;
+                     font-size: 18px;
+                     height: 50px;
+                     width: 50px;
+                     line-height: 50px;
+                     background-color: #f0a500;}
+                    
+
+ button {cursor: pointer;}
+
+main {padding:0px;}
+
+main #home {background: url("./IMAAG.jpg");
+            padding-top: 100%;
+            background-size: 70%;
+            background-position:top;}
+                     
+main #home, #about, #contact {padding: 20%; padding-bottom: 50px;}
+
+main #about, #contact{padding-top: 5%;}
+                     
+#home .name {background-image: linear-gradient(rgb(252, 108, 56),rgb(252, 108, 56), rgb(252, 108, 56),#ffffff 67%,#0b8800 67%);
+    -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;}
+    
+#home .name,  .profession { font-size:60px;
+                            font-weight: 700;
+                            margin-bottom: 0.3em;}
+
+
+
+#home .vertical-links{justify-content: flex-start;
+                      flex-direction: column;
+                      position: absolute;
+                      left: 80px;
+                      top: 380px;
+                      line-height: 50px;}
+              
+#home .vertical-links li{list-style: none;}
+
+#home .vertical-links a{text-decoration: none;}
+
+#home .vertical-links #lastverticallink{margin-bottom: 1.2em;}
+
+
+                                          
+#home .vertical-links1{justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    right: 80px;
+    top: 380px;
+    line-height: 50px;}
+
+#home .vertical-links1 li{list-style: none;}
+
+#home .vertical-links1 a{text-decoration: none;}
+
+#home .vertical-links1 #lastverticallink{margin-bottom: 1.2em;}
+
+
+
+.fab,.far{font-size: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    padding: 8px;}
+
+.fa-github, .fa-instagram, .fa-twitter, .fa-envelope, .fa-linkedin, .fa-medium
+{color: rgba(114, 103, 103, 0.993);}
+
+
+
+
+p{color:rgba(114, 103, 103, 0.993);
+      font-size: 20px;
+      line-height: 30px;}
+
+
+
+#home .intro
+{margin-top: 15px;}
+
+#home #btncontact{margin-top: 50px; 
+        padding: 20px; 
+        width: 250px;
+        font-family: "Fira Mono", monospace;
+        border: 2px solid yellow;
+        border-radius: 4px;
+        font-size:18px;
+        background-color: rgba(0, 0, 0, 0.452);
+        color: yellow;}
+        
+
+#about, #contact{background-color:  #06191d;}
+
+#about{padding-top: 65px;}
+
+#about .aboutintro{display: flex;}
+
+.subheaderhorizontalline{width: 250px; height: 1px;background-color: white;position: relative;top: 15px; margin-left: 10px;}
+
+#about .subheader, #contact .subheader
+{display: flex;
+ justify-content: flex-start;
+ flex-direction: row;}
+
+#about .subheader .aboutme{margin-bottom: 5%;}
+
+
+
+#about .swagboy img{width: 300px;height: 300px; object-fit: cover;margin: 3em 0 3em 0; border: 8px solid yellow; border-radius: 100%; transition: .3s; margin:auto; margin-left: 50px;  }
+
+.swagboy img:hover{border-color: purple !important; transform: translate(10px, -10px);}
+
+
+
+
+#about .skillintro{margin-bottom: 40px; margin-top: 100px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500;}
+
+#about .cardwraper{display: flex; align-items: center;  justify-content: space-between;}
+
+#about .cardwraper .card{ width: 100px;font-weight: 500; display:flex; color: yellow;align-items: center; font-size: 20px;}
+
+#about .cardwraper .card .icon-wraper{padding: 25px; display: flex; justify-content: center; border: 2px solid yellow; border-radius: 50%;}
+
+#about .fab{font-size: 50px;}
+
+#about .fa-html5, .fa-css3, .fa-js-square{font-size: 30px; border: 2px solid yellow;padding: 15px;}
+
+#about .skillname{padding: 40px;color: yellow;}
+
+
+.contactcontainer{background-color: #151515;padding: 0%; }
+
+.contactcontainer #contact .contact {margin-bottom: 60px;}
+
+.contactcontainer #contact .contactline{font-size: 30px; font-style: italic; font-weight: 500; color: yellow;text-align: center;}
+
+.contactcontainer #contact form{background-color:#000000; display: flex;padding: 30px;flex-direction: column; justify-content: center; margin-top: 30px;
+      border-radius: 10px; max-width: 60%; margin-left: 20%;}
+
+.contactcontainer form .msg{text-align: center; font-size: 22px;margin-bottom: 15px; text-transform: uppercase;}
+
+.contactcontainer form input,textarea{margin: 8px; border: none; border-bottom: 4px solid rgb(58, 58, 1); color: rgb(41, 0, 80);}
+
+.contactcontainer input:focus{border-bottom-color: yellow ; outline: none;}
+
+.contactcontainer textarea:focus{border-bottom-color: yellow ; outline: none; padding: 10px; font-size: 30px;}
+
+#contact input{padding-bottom: 15px;}
+
+#contact form #submitBtn{padding: 10px;margin: 10px; background-color:yellow;text-transform: uppercase;font-weight: 500;border: none; border-radius:5px; } 
+
+
+
+footer{text-align: center; color: #ffffff;justify-content: center;background-color: #000000; padding: 15px;  font-family: "Fira Mono", monospace; color: yellow;}
+
+.footer-icon{display: flex; flex-direction: row; margin-left: 38%;}
+
+.footer-icon li{list-style: none; margin: 10px ; padding-bottom: 15px;  }
+
+.footer-icon li a i{font-size: 20px;border: none; color: yellow;;}
+
+.emoji{color: red;}
